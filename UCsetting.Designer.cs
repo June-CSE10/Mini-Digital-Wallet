@@ -44,7 +44,7 @@
             LabelphonePF = new Sunny.UI.UILabel();
             labelemailPF = new Sunny.UI.UILabel();
             lblfullnamePF = new Sunny.UI.UILabel();
-            PanelProfile = new Sunny.UI.UIPanel();
+            PanelSetting = new Sunny.UI.UIPanel();
             uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -265,24 +265,24 @@
             lblfullnamePF.TabIndex = 0;
             lblfullnamePF.Text = "Full Name";
             // 
-            // PanelProfile
+            // PanelSetting
             // 
-            PanelProfile.Font = new Font("Microsoft YaHei", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            PanelProfile.Location = new Point(18, 10);
-            PanelProfile.Margin = new Padding(4, 5, 4, 5);
-            PanelProfile.MinimumSize = new Size(1, 1);
-            PanelProfile.Name = "PanelProfile";
-            PanelProfile.Size = new Size(667, 59);
-            PanelProfile.TabIndex = 3;
-            PanelProfile.Text = "Profile";
-            PanelProfile.TextAlignment = ContentAlignment.MiddleLeft;
+            PanelSetting.Font = new Font("Microsoft YaHei", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PanelSetting.Location = new Point(18, 10);
+            PanelSetting.Margin = new Padding(4, 5, 4, 5);
+            PanelSetting.MinimumSize = new Size(1, 1);
+            PanelSetting.Name = "PanelSetting";
+            PanelSetting.Size = new Size(667, 59);
+            PanelSetting.TabIndex = 3;
+            PanelSetting.Text = "Setting";
+            PanelSetting.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // UCsetting
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(uiPanel2);
-            Controls.Add(PanelProfile);
+            Controls.Add(PanelSetting);
             Margin = new Padding(2);
             Name = "UCsetting";
             Size = new Size(703, 632);
@@ -308,6 +308,6 @@
         private Sunny.UI.UILabel LabelphonePF;
         private Sunny.UI.UILabel labelemailPF;
         private Sunny.UI.UILabel lblfullnamePF;
-        private Sunny.UI.UIPanel PanelProfile;
+        private Sunny.UI.UIPanel PanelSetting;
     }
 }
