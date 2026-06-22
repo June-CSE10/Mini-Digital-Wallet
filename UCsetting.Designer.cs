@@ -85,6 +85,9 @@
             btnlogout.Name = "btnlogout";
             btnlogout.RectColor = Color.Navy;
             btnlogout.Size = new Size(578, 51);
+            btnlogout.Symbol = 61579;
+            btnlogout.SymbolColor = Color.FromArgb(64, 128, 204);
+            btnlogout.SymbolSize = 40;
             btnlogout.TabIndex = 14;
             btnlogout.Text = "Log Out";
             btnlogout.TipsFont = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -92,10 +95,11 @@
             // uiSymbolButton4
             // 
             uiSymbolButton4.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton4.Location = new Point(415, 421);
+            uiSymbolButton4.Location = new Point(408, 421);
             uiSymbolButton4.MinimumSize = new Size(1, 1);
             uiSymbolButton4.Name = "uiSymbolButton4";
-            uiSymbolButton4.Size = new Size(146, 36);
+            uiSymbolButton4.Size = new Size(153, 36);
+            uiSymbolButton4.Symbol = 61981;
             uiSymbolButton4.TabIndex = 13;
             uiSymbolButton4.Text = "Add Address";
             uiSymbolButton4.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -103,10 +107,11 @@
             // btnchangepwST
             // 
             btnchangepwST.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnchangepwST.Location = new Point(415, 328);
+            btnchangepwST.Location = new Point(408, 328);
             btnchangepwST.MinimumSize = new Size(1, 1);
             btnchangepwST.Name = "btnchangepwST";
-            btnchangepwST.Size = new Size(146, 36);
+            btnchangepwST.Size = new Size(153, 36);
+            btnchangepwST.Symbol = 61475;
             btnchangepwST.TabIndex = 12;
             btnchangepwST.Text = "Change Password";
             btnchangepwST.TipsFont = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -114,10 +119,11 @@
             // uiSymbolButton2
             // 
             uiSymbolButton2.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton2.Location = new Point(415, 234);
+            uiSymbolButton2.Location = new Point(408, 234);
             uiSymbolButton2.MinimumSize = new Size(1, 1);
             uiSymbolButton2.Name = "uiSymbolButton2";
-            uiSymbolButton2.Size = new Size(146, 36);
+            uiSymbolButton2.Size = new Size(153, 36);
+            uiSymbolButton2.Symbol = 61589;
             uiSymbolButton2.TabIndex = 11;
             uiSymbolButton2.Text = "Change";
             uiSymbolButton2.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -125,10 +131,11 @@
             // btnchangeemailST
             // 
             btnchangeemailST.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnchangeemailST.Location = new Point(415, 139);
+            btnchangeemailST.Location = new Point(408, 139);
             btnchangeemailST.MinimumSize = new Size(1, 1);
             btnchangeemailST.Name = "btnchangeemailST";
-            btnchangeemailST.Size = new Size(146, 36);
+            btnchangeemailST.Size = new Size(153, 36);
+            btnchangeemailST.Symbol = 61508;
             btnchangeemailST.TabIndex = 10;
             btnchangeemailST.Text = "Change Email";
             btnchangeemailST.TipsFont = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
