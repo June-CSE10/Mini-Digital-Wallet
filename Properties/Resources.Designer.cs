@@ -63,9 +63,55 @@ namespace Mini_Digital_Wallet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap Cs {
             get {
                 object obj = ResourceManager.GetObject("Cs", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap _1913515 {
+            get {
+                object obj = ResourceManager.GetObject("1913515", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _19135151 {
+            get {
+                object obj = ResourceManager.GetObject("19135151", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap b0FwJOyobV6NnXq4XV6y__Iohrc {
+            get {
+                object obj = ResourceManager.GetObject("b0FwJOyobV6NnXq4XV6y--Iohrc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_thai_pattern_vector_png_image_16823505 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-thai-pattern-vector-png-image_16823505", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wp14132219 {
+            get {
+                object obj = ResourceManager.GetObject("wp14132219", resourceCulture);
+>>>>>>> 3c7bd3e7469f16fd54f636c4adab40e4333fc4aa
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

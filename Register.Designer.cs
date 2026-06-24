@@ -45,7 +45,6 @@
             BtnRegister = new Sunny.UI.UIButton();
             uiButton1 = new Sunny.UI.UIButton();
             uiLabel2 = new Sunny.UI.UILabel();
-            uiPanel1 = new Sunny.UI.UIPanel();
             uiImageListBox1 = new Sunny.UI.UIImageListBox();
             SuspendLayout();
             // 
@@ -198,9 +197,8 @@
             TxtPhoneNumber.ShowText = false;
             TxtPhoneNumber.Size = new Size(297, 36);
             TxtPhoneNumber.TabIndex = 16;
-            TxtPhoneNumber.Text = "Enter your phone number";
             TxtPhoneNumber.TextAlignment = ContentAlignment.MiddleLeft;
-            TxtPhoneNumber.Watermark = "";
+            TxtPhoneNumber.Watermark = "Enter your phone number";
             // 
             // CheckBox1
             // 
@@ -252,17 +250,6 @@
             uiLabel2.TabIndex = 20;
             uiLabel2.Text = "Or";
             // 
-            // uiPanel1
-            // 
-            uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 53);
-            uiPanel1.Margin = new Padding(4, 5, 4, 5);
-            uiPanel1.MinimumSize = new Size(1, 1);
-            uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(382, 751);
-            uiPanel1.TabIndex = 21;
-            uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
             // uiImageListBox1
             // 
             uiImageListBox1.Font = new Font("Microsoft Sans Serif", 12F);
@@ -284,7 +271,6 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1080, 840);
             Controls.Add(uiImageListBox1);
-            Controls.Add(uiPanel1);
             Controls.Add(uiLabel2);
             Controls.Add(uiButton1);
             Controls.Add(BtnRegister);
@@ -329,7 +315,6 @@
         private Sunny.UI.UIButton BtnRegister;
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UILabel uiLabel2;
-        private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIImageListBox uiImageListBox1;
     }
 }
