@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             uiPanel2 = new Sunny.UI.UIPanel();
-            btnlogout = new Sunny.UI.UISymbolButton();
-            uiSymbolButton4 = new Sunny.UI.UISymbolButton();
-            btnchangepwST = new Sunny.UI.UISymbolButton();
-            uiSymbolButton2 = new Sunny.UI.UISymbolButton();
-            btnchangeemailST = new Sunny.UI.UISymbolButton();
             txtaddressPF = new Sunny.UI.UITextBox();
             txtpwdST = new Sunny.UI.UITextBox();
             txtphonePF = new Sunny.UI.UITextBox();
@@ -44,7 +39,12 @@
             LabelphonePF = new Sunny.UI.UILabel();
             labelemailPF = new Sunny.UI.UILabel();
             lblfullnamePF = new Sunny.UI.UILabel();
-            PanelSetting = new Sunny.UI.UIPanel();
+            PanelProfile = new Sunny.UI.UIPanel();
+            btnchangeemailST = new Sunny.UI.UISymbolButton();
+            uiSymbolButton2 = new Sunny.UI.UISymbolButton();
+            btnchangepwST = new Sunny.UI.UISymbolButton();
+            uiSymbolButton4 = new Sunny.UI.UISymbolButton();
+            btnlogout = new Sunny.UI.UISymbolButton();
             uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,77 +70,10 @@
             uiPanel2.Margin = new Padding(4, 5, 4, 5);
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
-            uiPanel2.Size = new Size(667, 553);
+            uiPanel2.Size = new Size(667, 543);
             uiPanel2.TabIndex = 5;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // btnlogout
-            // 
-            btnlogout.FillColor = Color.White;
-            btnlogout.Font = new Font("Microsoft Sans Serif", 12F);
-            btnlogout.ForeColor = Color.FromArgb(64, 128, 204);
-            btnlogout.Location = new Point(26, 481);
-            btnlogout.MinimumSize = new Size(1, 1);
-            btnlogout.Name = "btnlogout";
-            btnlogout.RectColor = Color.Navy;
-            btnlogout.Size = new Size(578, 51);
-            btnlogout.Symbol = 61579;
-            btnlogout.SymbolColor = Color.FromArgb(64, 128, 204);
-            btnlogout.SymbolSize = 40;
-            btnlogout.TabIndex = 14;
-            btnlogout.Text = "Log Out";
-            btnlogout.TipsFont = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            // 
-            // uiSymbolButton4
-            // 
-            uiSymbolButton4.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton4.Location = new Point(408, 421);
-            uiSymbolButton4.MinimumSize = new Size(1, 1);
-            uiSymbolButton4.Name = "uiSymbolButton4";
-            uiSymbolButton4.Size = new Size(153, 36);
-            uiSymbolButton4.Symbol = 61981;
-            uiSymbolButton4.SymbolSize = 26;
-            uiSymbolButton4.TabIndex = 13;
-            uiSymbolButton4.Text = " Add Address      ";
-            uiSymbolButton4.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
-            // btnchangepwST
-            // 
-            btnchangepwST.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnchangepwST.Location = new Point(408, 328);
-            btnchangepwST.MinimumSize = new Size(1, 1);
-            btnchangepwST.Name = "btnchangepwST";
-            btnchangepwST.Size = new Size(153, 36);
-            btnchangepwST.Symbol = 61475;
-            btnchangepwST.TabIndex = 12;
-            btnchangepwST.Text = "Change Password";
-            btnchangepwST.TipsFont = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            // 
-            // uiSymbolButton2
-            // 
-            uiSymbolButton2.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton2.Location = new Point(408, 234);
-            uiSymbolButton2.MinimumSize = new Size(1, 1);
-            uiSymbolButton2.Name = "uiSymbolButton2";
-            uiSymbolButton2.Size = new Size(153, 36);
-            uiSymbolButton2.Symbol = 61589;
-            uiSymbolButton2.TabIndex = 11;
-            uiSymbolButton2.Text = "Update Phone";
-            uiSymbolButton2.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
-            // btnchangeemailST
-            // 
-            btnchangeemailST.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnchangeemailST.Location = new Point(408, 139);
-            btnchangeemailST.MinimumSize = new Size(1, 1);
-            btnchangeemailST.Name = "btnchangeemailST";
-            btnchangeemailST.Size = new Size(153, 36);
-            btnchangeemailST.Symbol = 61508;
-            btnchangeemailST.SymbolSize = 26;
-            btnchangeemailST.TabIndex = 10;
-            btnchangeemailST.Text = "Update Email";
-            btnchangeemailST.TipsFont = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             // 
             // txtaddressPF
             // 
@@ -267,25 +200,83 @@
             lblfullnamePF.TabIndex = 0;
             lblfullnamePF.Text = "Full Name";
             // 
-            // PanelSetting
+            // PanelProfile
             // 
-            PanelSetting.Font = new Font("Microsoft YaHei", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            PanelSetting.Location = new Point(18, 10);
-            PanelSetting.Margin = new Padding(4, 5, 4, 5);
-            PanelSetting.MinimumSize = new Size(1, 1);
-            PanelSetting.Name = "PanelSetting";
-            PanelSetting.Size = new Size(667, 59);
-            PanelSetting.TabIndex = 3;
-            PanelSetting.Text = "Setting";
-            PanelSetting.TextAlignment = ContentAlignment.MiddleLeft;
+            PanelProfile.Font = new Font("Microsoft YaHei", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PanelProfile.Location = new Point(18, 10);
+            PanelProfile.Margin = new Padding(4, 5, 4, 5);
+            PanelProfile.MinimumSize = new Size(1, 1);
+            PanelProfile.Name = "PanelProfile";
+            PanelProfile.Size = new Size(667, 59);
+            PanelProfile.TabIndex = 3;
+            PanelProfile.Text = "Profile";
+            PanelProfile.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
+            // btnchangeemailST
+            // 
+            btnchangeemailST.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnchangeemailST.Location = new Point(415, 139);
+            btnchangeemailST.MinimumSize = new Size(1, 1);
+            btnchangeemailST.Name = "btnchangeemailST";
+            btnchangeemailST.Size = new Size(146, 36);
+            btnchangeemailST.TabIndex = 10;
+            btnchangeemailST.Text = "Change Email";
+            btnchangeemailST.TipsFont = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            // 
+            // uiSymbolButton2
+            // 
+            uiSymbolButton2.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton2.Location = new Point(415, 234);
+            uiSymbolButton2.MinimumSize = new Size(1, 1);
+            uiSymbolButton2.Name = "uiSymbolButton2";
+            uiSymbolButton2.Size = new Size(146, 36);
+            uiSymbolButton2.TabIndex = 11;
+            uiSymbolButton2.Text = "Change";
+            uiSymbolButton2.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
+            // btnchangepwST
+            // 
+            btnchangepwST.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnchangepwST.Location = new Point(415, 328);
+            btnchangepwST.MinimumSize = new Size(1, 1);
+            btnchangepwST.Name = "btnchangepwST";
+            btnchangepwST.Size = new Size(146, 36);
+            btnchangepwST.TabIndex = 12;
+            btnchangepwST.Text = "Change Password";
+            btnchangepwST.TipsFont = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            // 
+            // uiSymbolButton4
+            // 
+            uiSymbolButton4.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton4.Location = new Point(415, 421);
+            uiSymbolButton4.MinimumSize = new Size(1, 1);
+            uiSymbolButton4.Name = "uiSymbolButton4";
+            uiSymbolButton4.Size = new Size(146, 36);
+            uiSymbolButton4.TabIndex = 13;
+            uiSymbolButton4.Text = "Add Address";
+            uiSymbolButton4.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
+            // btnlogout
+            // 
+            btnlogout.FillColor = Color.White;
+            btnlogout.Font = new Font("Microsoft Sans Serif", 12F);
+            btnlogout.ForeColor = Color.FromArgb(64, 128, 204);
+            btnlogout.Location = new Point(26, 481);
+            btnlogout.MinimumSize = new Size(1, 1);
+            btnlogout.Name = "btnlogout";
+            btnlogout.RectColor = Color.Navy;
+            btnlogout.Size = new Size(578, 36);
+            btnlogout.TabIndex = 14;
+            btnlogout.Text = "Log Out";
+            btnlogout.TipsFont = new Font("Microsoft YaHei", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             // 
             // UCsetting
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(uiPanel2);
-            Controls.Add(PanelSetting);
-            Margin = new Padding(2);
+            Controls.Add(PanelProfile);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "UCsetting";
             Size = new Size(703, 632);
             uiPanel2.ResumeLayout(false);
@@ -310,6 +301,6 @@
         private Sunny.UI.UILabel LabelphonePF;
         private Sunny.UI.UILabel labelemailPF;
         private Sunny.UI.UILabel lblfullnamePF;
-        private Sunny.UI.UIPanel PanelSetting;
+        private Sunny.UI.UIPanel PanelProfile;
     }
 }
