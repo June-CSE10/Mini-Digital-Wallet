@@ -100,8 +100,9 @@
             uiSymbolButton4.Name = "uiSymbolButton4";
             uiSymbolButton4.Size = new Size(153, 36);
             uiSymbolButton4.Symbol = 61981;
+            uiSymbolButton4.SymbolSize = 26;
             uiSymbolButton4.TabIndex = 13;
-            uiSymbolButton4.Text = "Add Address";
+            uiSymbolButton4.Text = " Add Address      ";
             uiSymbolButton4.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // btnchangepwST
@@ -125,7 +126,7 @@
             uiSymbolButton2.Size = new Size(153, 36);
             uiSymbolButton2.Symbol = 61589;
             uiSymbolButton2.TabIndex = 11;
-            uiSymbolButton2.Text = "Change";
+            uiSymbolButton2.Text = "Update Phone";
             uiSymbolButton2.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // btnchangeemailST
@@ -136,8 +137,9 @@
             btnchangeemailST.Name = "btnchangeemailST";
             btnchangeemailST.Size = new Size(153, 36);
             btnchangeemailST.Symbol = 61508;
+            btnchangeemailST.SymbolSize = 26;
             btnchangeemailST.TabIndex = 10;
-            btnchangeemailST.Text = "Change Email";
+            btnchangeemailST.Text = "Update Email";
             btnchangeemailST.TipsFont = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             // 
             // txtaddressPF

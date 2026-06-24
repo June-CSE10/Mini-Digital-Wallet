@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             PanelProfile = new Sunny.UI.UIPanel();
-            uiPanel1 = new Sunny.UI.UIPanel();
-            labeluploadpf = new Sunny.UI.UILinkLabel();
-            pictureBox1 = new PictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
+            btnadddobPF = new Sunny.UI.UISymbolButton();
             txtaddressPF = new Sunny.UI.UITextBox();
             txtdobPF = new Sunny.UI.UITextBox();
             txtphonePF = new Sunny.UI.UITextBox();
@@ -43,9 +41,8 @@
             LabelphonePF = new Sunny.UI.UILabel();
             labelemailPF = new Sunny.UI.UILabel();
             lblfullnamePF = new Sunny.UI.UILabel();
-            btnadddobPF = new Sunny.UI.UISymbolButton();
-            uiPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            uiLabel1 = new Sunny.UI.UILabel();
+            listView1 = new ListView();
             uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,44 +58,6 @@
             PanelProfile.Text = "Profile";
             PanelProfile.TextAlignment = ContentAlignment.MiddleLeft;
             // 
-            // uiPanel1
-            // 
-            uiPanel1.Controls.Add(labeluploadpf);
-            uiPanel1.Controls.Add(pictureBox1);
-            uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(16, 74);
-            uiPanel1.Margin = new Padding(4, 5, 4, 5);
-            uiPanel1.MinimumSize = new Size(1, 1);
-            uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(236, 364);
-            uiPanel1.TabIndex = 1;
-            uiPanel1.Text = null;
-            uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // labeluploadpf
-            // 
-            labeluploadpf.ActiveLinkColor = Color.FromArgb(80, 160, 255);
-            labeluploadpf.BackColor = Color.Transparent;
-            labeluploadpf.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labeluploadpf.ForeColor = Color.FromArgb(48, 48, 48);
-            labeluploadpf.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            labeluploadpf.Location = new Point(48, 139);
-            labeluploadpf.Name = "labeluploadpf";
-            labeluploadpf.Size = new Size(90, 23);
-            labeluploadpf.TabIndex = 1;
-            labeluploadpf.TabStop = true;
-            labeluploadpf.Text = "upload Profile";
-            labeluploadpf.VisitedLinkColor = Color.FromArgb(230, 80, 80);
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Location = new Point(48, 28);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 108);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // uiPanel2
             // 
             uiPanel2.Controls.Add(btnadddobPF);
@@ -113,25 +72,36 @@
             uiPanel2.Controls.Add(labelemailPF);
             uiPanel2.Controls.Add(lblfullnamePF);
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel2.Location = new Point(269, 74);
+            uiPanel2.Location = new Point(333, 74);
             uiPanel2.Margin = new Padding(4, 5, 4, 5);
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
-            uiPanel2.Size = new Size(414, 543);
+            uiPanel2.Size = new Size(350, 543);
             uiPanel2.TabIndex = 2;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // btnadddobPF
+            // 
+            btnadddobPF.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnadddobPF.Location = new Point(195, 330);
+            btnadddobPF.MinimumSize = new Size(1, 1);
+            btnadddobPF.Name = "btnadddobPF";
+            btnadddobPF.Size = new Size(138, 36);
+            btnadddobPF.TabIndex = 10;
+            btnadddobPF.Text = "Add";
+            btnadddobPF.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
             // txtaddressPF
             // 
             txtaddressPF.Font = new Font("Microsoft Sans Serif", 12F);
-            txtaddressPF.Location = new Point(26, 422);
+            txtaddressPF.Location = new Point(20, 424);
             txtaddressPF.Margin = new Padding(4, 5, 4, 5);
             txtaddressPF.MinimumSize = new Size(1, 16);
             txtaddressPF.Name = "txtaddressPF";
             txtaddressPF.Padding = new Padding(5);
             txtaddressPF.ShowText = false;
-            txtaddressPF.Size = new Size(354, 91);
+            txtaddressPF.Size = new Size(313, 91);
             txtaddressPF.TabIndex = 9;
             txtaddressPF.TextAlignment = ContentAlignment.MiddleLeft;
             txtaddressPF.Watermark = "";
@@ -139,27 +109,29 @@
             // txtdobPF
             // 
             txtdobPF.Font = new Font("Microsoft Sans Serif", 12F);
-            txtdobPF.Location = new Point(26, 328);
+            txtdobPF.Location = new Point(20, 330);
             txtdobPF.Margin = new Padding(4, 5, 4, 5);
             txtdobPF.MinimumSize = new Size(1, 16);
             txtdobPF.Name = "txtdobPF";
             txtdobPF.Padding = new Padding(5);
             txtdobPF.ShowText = false;
-            txtdobPF.Size = new Size(177, 36);
+            txtdobPF.Size = new Size(156, 36);
             txtdobPF.TabIndex = 8;
             txtdobPF.TextAlignment = ContentAlignment.MiddleLeft;
-            txtdobPF.Watermark = "";
+            txtdobPF.Watermark = "YYYY-MM-DD";
+            txtdobPF.WatermarkActiveColor = Color.Silver;
+            txtdobPF.WatermarkColor = Color.Silver;
             // 
             // txtphonePF
             // 
             txtphonePF.Font = new Font("Microsoft Sans Serif", 12F);
-            txtphonePF.Location = new Point(26, 234);
+            txtphonePF.Location = new Point(20, 236);
             txtphonePF.Margin = new Padding(4, 5, 4, 5);
             txtphonePF.MinimumSize = new Size(1, 16);
             txtphonePF.Name = "txtphonePF";
             txtphonePF.Padding = new Padding(5);
             txtphonePF.ShowText = false;
-            txtphonePF.Size = new Size(354, 36);
+            txtphonePF.Size = new Size(313, 36);
             txtphonePF.TabIndex = 7;
             txtphonePF.TextAlignment = ContentAlignment.MiddleLeft;
             txtphonePF.Watermark = "";
@@ -167,13 +139,13 @@
             // txtemailPF
             // 
             txtemailPF.Font = new Font("Microsoft Sans Serif", 12F);
-            txtemailPF.Location = new Point(26, 139);
+            txtemailPF.Location = new Point(20, 141);
             txtemailPF.Margin = new Padding(4, 5, 4, 5);
             txtemailPF.MinimumSize = new Size(1, 16);
             txtemailPF.Name = "txtemailPF";
             txtemailPF.Padding = new Padding(5);
             txtemailPF.ShowText = false;
-            txtemailPF.Size = new Size(354, 36);
+            txtemailPF.Size = new Size(313, 36);
             txtemailPF.TabIndex = 6;
             txtemailPF.TextAlignment = ContentAlignment.MiddleLeft;
             txtemailPF.Watermark = "";
@@ -181,13 +153,13 @@
             // txtfullnamePF
             // 
             txtfullnamePF.Font = new Font("Microsoft Sans Serif", 12F);
-            txtfullnamePF.Location = new Point(26, 53);
+            txtfullnamePF.Location = new Point(20, 55);
             txtfullnamePF.Margin = new Padding(4, 5, 4, 5);
             txtfullnamePF.MinimumSize = new Size(1, 16);
             txtfullnamePF.Name = "txtfullnamePF";
             txtfullnamePF.Padding = new Padding(5);
             txtfullnamePF.ShowText = false;
-            txtfullnamePF.Size = new Size(354, 36);
+            txtfullnamePF.Size = new Size(313, 36);
             txtfullnamePF.TabIndex = 5;
             txtfullnamePF.TextAlignment = ContentAlignment.MiddleLeft;
             txtfullnamePF.Watermark = "";
@@ -197,9 +169,9 @@
             labeladdressPF.BackColor = Color.Transparent;
             labeladdressPF.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labeladdressPF.ForeColor = Color.FromArgb(48, 48, 48);
-            labeladdressPF.Location = new Point(26, 397);
+            labeladdressPF.Location = new Point(20, 399);
             labeladdressPF.Name = "labeladdressPF";
-            labeladdressPF.Size = new Size(125, 29);
+            labeladdressPF.Size = new Size(84, 29);
             labeladdressPF.TabIndex = 4;
             labeladdressPF.Text = "Address";
             // 
@@ -208,9 +180,9 @@
             lbeldobPF.BackColor = Color.Transparent;
             lbeldobPF.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbeldobPF.ForeColor = Color.FromArgb(48, 48, 48);
-            lbeldobPF.Location = new Point(26, 305);
+            lbeldobPF.Location = new Point(20, 307);
             lbeldobPF.Name = "lbeldobPF";
-            lbeldobPF.Size = new Size(125, 29);
+            lbeldobPF.Size = new Size(121, 29);
             lbeldobPF.TabIndex = 3;
             lbeldobPF.Text = "Date of Birth";
             // 
@@ -219,9 +191,9 @@
             LabelphonePF.BackColor = Color.Transparent;
             LabelphonePF.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LabelphonePF.ForeColor = Color.FromArgb(48, 48, 48);
-            LabelphonePF.Location = new Point(26, 210);
+            LabelphonePF.Location = new Point(20, 212);
             LabelphonePF.Name = "LabelphonePF";
-            LabelphonePF.Size = new Size(125, 29);
+            LabelphonePF.Size = new Size(84, 29);
             LabelphonePF.TabIndex = 2;
             LabelphonePF.Text = "Phone Number";
             // 
@@ -230,9 +202,9 @@
             labelemailPF.BackColor = Color.Transparent;
             labelemailPF.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelemailPF.ForeColor = Color.FromArgb(48, 48, 48);
-            labelemailPF.Location = new Point(26, 115);
+            labelemailPF.Location = new Point(20, 117);
             labelemailPF.Name = "labelemailPF";
-            labelemailPF.Size = new Size(125, 29);
+            labelemailPF.Size = new Size(84, 29);
             labelemailPF.TabIndex = 1;
             labelemailPF.Text = "Email";
             // 
@@ -241,35 +213,43 @@
             lblfullnamePF.BackColor = Color.Transparent;
             lblfullnamePF.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblfullnamePF.ForeColor = Color.FromArgb(48, 48, 48);
-            lblfullnamePF.Location = new Point(26, 28);
+            lblfullnamePF.Location = new Point(20, 30);
             lblfullnamePF.Name = "lblfullnamePF";
-            lblfullnamePF.Size = new Size(125, 29);
+            lblfullnamePF.Size = new Size(121, 29);
             lblfullnamePF.TabIndex = 0;
             lblfullnamePF.Text = "Full Name";
             // 
-            // btnadddobPF
+            // uiLabel1
             // 
-            btnadddobPF.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnadddobPF.Location = new Point(229, 328);
-            btnadddobPF.MinimumSize = new Size(1, 1);
-            btnadddobPF.Name = "btnadddobPF";
-            btnadddobPF.Size = new Size(151, 36);
-            btnadddobPF.TabIndex = 10;
-            btnadddobPF.Text = "Add";
-            btnadddobPF.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            uiLabel1.BackColor = Color.Transparent;
+            uiLabel1.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel1.Location = new Point(16, 87);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(230, 29);
+            uiLabel1.TabIndex = 2;
+            uiLabel1.Text = "Recent Transactions ";
+            // 
+            // listView1
+            // 
+            listView1.BackColor = Color.WhiteSmoke;
+            listView1.Location = new Point(16, 110);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(310, 300);
+            listView1.TabIndex = 3;
+            listView1.UseCompatibleStateImageBehavior = false;
             // 
             // UCprofile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(listView1);
+            Controls.Add(uiLabel1);
             Controls.Add(uiPanel2);
-            Controls.Add(uiPanel1);
             Controls.Add(PanelProfile);
             Margin = new Padding(2);
             Name = "UCprofile";
             Size = new Size(703, 632);
-            uiPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -277,9 +257,6 @@
         #endregion
 
         private Sunny.UI.UIPanel PanelProfile;
-        private Sunny.UI.UIPanel uiPanel1;
-        private Sunny.UI.UILinkLabel labeluploadpf;
-        private PictureBox pictureBox1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UITextBox txtaddressPF;
         private Sunny.UI.UITextBox txtdobPF;
@@ -292,5 +269,7 @@
         private Sunny.UI.UILabel labelemailPF;
         private Sunny.UI.UILabel lblfullnamePF;
         private Sunny.UI.UISymbolButton btnadddobPF;
+        private Sunny.UI.UILabel uiLabel1;
+        private ListView listView1;
     }
 }

@@ -63,6 +63,11 @@ namespace Mini_Digital_Wallet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
+        internal static System.Drawing.Bitmap Cs {
+            get {
+                object obj = ResourceManager.GetObject("Cs", resourceCulture);
+=======
         internal static System.Drawing.Bitmap _1913515 {
             get {
                 object obj = ResourceManager.GetObject("1913515", resourceCulture);
@@ -106,6 +111,7 @@ namespace Mini_Digital_Wallet.Properties {
         internal static System.Drawing.Bitmap wp14132219 {
             get {
                 object obj = ResourceManager.GetObject("wp14132219", resourceCulture);
+>>>>>>> 3c7bd3e7469f16fd54f636c4adab40e4333fc4aa
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
