@@ -44,5 +44,25 @@ namespace Mini_Digital_Wallet
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uiPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiSymbolLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

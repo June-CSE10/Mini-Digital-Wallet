@@ -93,6 +93,76 @@ namespace Mini_Digital_Wallet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Notification {
+            get {
+                object obj = ResourceManager.GetObject("Notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notification1 {
+            get {
+                object obj = ResourceManager.GetObject("Notification1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_06_24_09_57_02 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-06-24_09-57-02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_06_24_09_57_02_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-06-24_09-57-02-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_06_24_09_57_02_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-06-24_09-57-02-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_06_24_10_38_43 {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-06-24_10-38-43", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_2026_06_24_10_38_43_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("photo_2026-06-24_10-38-43-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_thai_pattern_vector_png_image_16823505 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-thai-pattern-vector-png-image_16823505", resourceCulture);
