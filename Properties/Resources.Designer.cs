@@ -59,5 +59,36 @@ namespace Mini_Digital_Wallet.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_cryptocurrency_wallet_money_computer_icons_digital_wallet_wallet_payment_business_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-cryptocurrency-wallet-money-computer-icons-digital-wallet-wallet-paym" +
+                        "ent-business-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wallet {
+            get {
+                object obj = ResourceManager.GetObject("Wallet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -7,5 +7,10 @@ namespace Mini_Digital_Wallet
         {
             InitializeComponent();
         }
+
+        private void uiSymbolButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
