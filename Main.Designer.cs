@@ -42,7 +42,7 @@
             TbpContacs = new TabPage();
             uCcontacs1 = new UCcontacs();
             TbpProfile = new TabPage();
-            uCprofile1 = new UCprofile();
+            //uCprofile1 = new UCprofile();
             TbpSetting = new TabPage();
             uCsetting1 = new UCsetting();
             TbpLogOut = new TabPage();
