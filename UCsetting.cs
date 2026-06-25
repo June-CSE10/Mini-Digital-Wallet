@@ -14,5 +14,10 @@ namespace Mini_Digital_Wallet
         {
             InitializeComponent();
         }
+
+        private void btnlogout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
