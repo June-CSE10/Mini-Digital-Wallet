@@ -32,22 +32,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             TbpDashboard = new TabPage();
-            TbpSendMoney = new TabPage();
-            TbpAddMoney = new TabPage();
-            TbpTransactions = new TabPage();
-            TbpContacs = new TabPage();
-            TbpProfile = new TabPage();
-            TbpSetting = new TabPage();
-            TbpLogOut = new TabPage();
-            imageList1 = new ImageList(components);
             uCdashboard1 = new UCdashboard();
+            TbpSendMoney = new TabPage();
             uCsendmoney1 = new UCsendmoney();
+            TbpAddMoney = new TabPage();
             uCaddmoney1 = new UCaddmoney();
+            TbpTransactions = new TabPage();
             uCtransactions1 = new UCtransactions();
+            TbpContacs = new TabPage();
             uCcontacs1 = new UCcontacs();
+            TbpProfile = new TabPage();
             uCprofile1 = new UCprofile();
+            TbpSetting = new TabPage();
             uCsetting1 = new UCsetting();
+            TbpLogOut = new TabPage();
             uClogOut1 = new UClogOut();
+            imageList1 = new ImageList(components);
             uiTabControlMenu1.SuspendLayout();
             TbpDashboard.SuspendLayout();
             TbpSendMoney.SuspendLayout();
@@ -79,7 +79,7 @@
             uiTabControlMenu1.Multiline = true;
             uiTabControlMenu1.Name = "uiTabControlMenu1";
             uiTabControlMenu1.SelectedIndex = 0;
-            uiTabControlMenu1.Size = new Size(1080, 790);
+            uiTabControlMenu1.Size = new Size(1356, 790);
             uiTabControlMenu1.SizeMode = TabSizeMode.Fixed;
             uiTabControlMenu1.TabIndex = 1;
             uiTabControlMenu1.TextAlignment = HorizontalAlignment.Left;
@@ -90,10 +90,20 @@
             TbpDashboard.ImageIndex = 0;
             TbpDashboard.Location = new Point(201, 0);
             TbpDashboard.Name = "TbpDashboard";
-            TbpDashboard.Size = new Size(879, 790);
+            TbpDashboard.Size = new Size(1155, 790);
             TbpDashboard.TabIndex = 0;
             TbpDashboard.Text = "Dashboard";
             TbpDashboard.UseVisualStyleBackColor = true;
+            // 
+            // uCdashboard1
+            // 
+            uCdashboard1.BackColor = Color.FromArgb(192, 192, 255);
+            uCdashboard1.Dock = DockStyle.Fill;
+            uCdashboard1.Location = new Point(0, 0);
+            uCdashboard1.Margin = new Padding(5);
+            uCdashboard1.Name = "uCdashboard1";
+            uCdashboard1.Size = new Size(1155, 790);
+            uCdashboard1.TabIndex = 0;
             // 
             // TbpSendMoney
             // 
@@ -106,6 +116,15 @@
             TbpSendMoney.Text = "Send Money";
             TbpSendMoney.UseVisualStyleBackColor = true;
             // 
+            // uCsendmoney1
+            // 
+            uCsendmoney1.Dock = DockStyle.Fill;
+            uCsendmoney1.Location = new Point(0, 0);
+            uCsendmoney1.Margin = new Padding(5, 5, 5, 5);
+            uCsendmoney1.Name = "uCsendmoney1";
+            uCsendmoney1.Size = new Size(879, 790);
+            uCsendmoney1.TabIndex = 0;
+            // 
             // TbpAddMoney
             // 
             TbpAddMoney.Controls.Add(uCaddmoney1);
@@ -116,6 +135,15 @@
             TbpAddMoney.TabIndex = 2;
             TbpAddMoney.Text = "Add Money";
             TbpAddMoney.UseVisualStyleBackColor = true;
+            // 
+            // uCaddmoney1
+            // 
+            uCaddmoney1.Dock = DockStyle.Fill;
+            uCaddmoney1.Location = new Point(0, 0);
+            uCaddmoney1.Margin = new Padding(5, 5, 5, 5);
+            uCaddmoney1.Name = "uCaddmoney1";
+            uCaddmoney1.Size = new Size(879, 790);
+            uCaddmoney1.TabIndex = 0;
             // 
             // TbpTransactions
             // 
@@ -128,6 +156,15 @@
             TbpTransactions.Text = "Transactions";
             TbpTransactions.UseVisualStyleBackColor = true;
             // 
+            // uCtransactions1
+            // 
+            uCtransactions1.Dock = DockStyle.Fill;
+            uCtransactions1.Location = new Point(0, 0);
+            uCtransactions1.Margin = new Padding(5, 5, 5, 5);
+            uCtransactions1.Name = "uCtransactions1";
+            uCtransactions1.Size = new Size(879, 790);
+            uCtransactions1.TabIndex = 0;
+            // 
             // TbpContacs
             // 
             TbpContacs.Controls.Add(uCcontacs1);
@@ -138,6 +175,15 @@
             TbpContacs.TabIndex = 4;
             TbpContacs.Text = "Contacs";
             TbpContacs.UseVisualStyleBackColor = true;
+            // 
+            // uCcontacs1
+            // 
+            uCcontacs1.Dock = DockStyle.Fill;
+            uCcontacs1.Location = new Point(0, 0);
+            uCcontacs1.Margin = new Padding(5, 5, 5, 5);
+            uCcontacs1.Name = "uCcontacs1";
+            uCcontacs1.Size = new Size(879, 790);
+            uCcontacs1.TabIndex = 0;
             // 
             // TbpProfile
             // 
@@ -150,6 +196,15 @@
             TbpProfile.Text = "Profile";
             TbpProfile.UseVisualStyleBackColor = true;
             // 
+            // uCprofile1
+            // 
+            uCprofile1.Dock = DockStyle.Fill;
+            uCprofile1.Location = new Point(0, 0);
+            uCprofile1.Margin = new Padding(4, 4, 4, 4);
+            uCprofile1.Name = "uCprofile1";
+            uCprofile1.Size = new Size(879, 790);
+            uCprofile1.TabIndex = 0;
+            // 
             // TbpSetting
             // 
             TbpSetting.Controls.Add(uCsetting1);
@@ -161,6 +216,15 @@
             TbpSetting.Text = "Setting";
             TbpSetting.UseVisualStyleBackColor = true;
             // 
+            // uCsetting1
+            // 
+            uCsetting1.Dock = DockStyle.Fill;
+            uCsetting1.Location = new Point(0, 0);
+            uCsetting1.Margin = new Padding(4, 4, 4, 4);
+            uCsetting1.Name = "uCsetting1";
+            uCsetting1.Size = new Size(879, 790);
+            uCsetting1.TabIndex = 0;
+            // 
             // TbpLogOut
             // 
             TbpLogOut.Controls.Add(uClogOut1);
@@ -171,6 +235,15 @@
             TbpLogOut.TabIndex = 7;
             TbpLogOut.Text = "Log Out";
             TbpLogOut.UseVisualStyleBackColor = true;
+            // 
+            // uClogOut1
+            // 
+            uClogOut1.Dock = DockStyle.Fill;
+            uClogOut1.Location = new Point(0, 0);
+            uClogOut1.Margin = new Padding(5, 5, 5, 5);
+            uClogOut1.Name = "uClogOut1";
+            uClogOut1.Size = new Size(879, 790);
+            uClogOut1.TabIndex = 0;
             // 
             // imageList1
             // 
@@ -187,74 +260,10 @@
             imageList1.Images.SetKeyName(7, "Settings.png");
             imageList1.Images.SetKeyName(8, "Wallet.png");
             // 
-            // uCdashboard1
-            // 
-            uCdashboard1.Dock = DockStyle.Fill;
-            uCdashboard1.Location = new Point(0, 0);
-            uCdashboard1.Name = "uCdashboard1";
-            uCdashboard1.Size = new Size(879, 790);
-            uCdashboard1.TabIndex = 0;
-            // 
-            // uCsendmoney1
-            // 
-            uCsendmoney1.Dock = DockStyle.Fill;
-            uCsendmoney1.Location = new Point(0, 0);
-            uCsendmoney1.Name = "uCsendmoney1";
-            uCsendmoney1.Size = new Size(879, 790);
-            uCsendmoney1.TabIndex = 0;
-            // 
-            // uCaddmoney1
-            // 
-            uCaddmoney1.Dock = DockStyle.Fill;
-            uCaddmoney1.Location = new Point(0, 0);
-            uCaddmoney1.Name = "uCaddmoney1";
-            uCaddmoney1.Size = new Size(879, 790);
-            uCaddmoney1.TabIndex = 0;
-            // 
-            // uCtransactions1
-            // 
-            uCtransactions1.Dock = DockStyle.Fill;
-            uCtransactions1.Location = new Point(0, 0);
-            uCtransactions1.Name = "uCtransactions1";
-            uCtransactions1.Size = new Size(879, 790);
-            uCtransactions1.TabIndex = 0;
-            // 
-            // uCcontacs1
-            // 
-            uCcontacs1.Dock = DockStyle.Fill;
-            uCcontacs1.Location = new Point(0, 0);
-            uCcontacs1.Name = "uCcontacs1";
-            uCcontacs1.Size = new Size(879, 790);
-            uCcontacs1.TabIndex = 0;
-            // 
-            // uCprofile1
-            // 
-            uCprofile1.Dock = DockStyle.Fill;
-            uCprofile1.Location = new Point(0, 0);
-            uCprofile1.Name = "uCprofile1";
-            uCprofile1.Size = new Size(879, 790);
-            uCprofile1.TabIndex = 0;
-            // 
-            // uCsetting1
-            // 
-            uCsetting1.Dock = DockStyle.Fill;
-            uCsetting1.Location = new Point(0, 0);
-            uCsetting1.Name = "uCsetting1";
-            uCsetting1.Size = new Size(879, 790);
-            uCsetting1.TabIndex = 0;
-            // 
-            // uClogOut1
-            // 
-            uClogOut1.Dock = DockStyle.Fill;
-            uClogOut1.Location = new Point(0, 0);
-            uClogOut1.Name = "uClogOut1";
-            uClogOut1.Size = new Size(879, 790);
-            uClogOut1.TabIndex = 0;
-            // 
             // Main
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1080, 840);
+            ClientSize = new Size(1356, 840);
             Controls.Add(uiTabControlMenu1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Main";

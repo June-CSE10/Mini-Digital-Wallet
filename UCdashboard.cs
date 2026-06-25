@@ -14,5 +14,55 @@ namespace Mini_Digital_Wallet
         {
             InitializeComponent();
         }
+
+        private void UCdashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblWallet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblAvailableBalance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uiPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiSymbolLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
