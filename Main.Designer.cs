@@ -42,19 +42,18 @@
             TbpContacs = new TabPage();
             uCcontacs1 = new UCcontacs();
             TbpProfile = new TabPage();
-            //uCprofile1 = new UCprofile();
             TbpSetting = new TabPage();
             uCsetting1 = new UCsetting();
             TbpLogOut = new TabPage();
             uClogOut1 = new UClogOut();
             imageList1 = new ImageList(components);
+            button1 = new Button();
             uiTabControlMenu1.SuspendLayout();
             TbpDashboard.SuspendLayout();
             TbpSendMoney.SuspendLayout();
             TbpAddMoney.SuspendLayout();
             TbpTransactions.SuspendLayout();
             TbpContacs.SuspendLayout();
-            TbpProfile.SuspendLayout();
             TbpSetting.SuspendLayout();
             TbpLogOut.SuspendLayout();
             SuspendLayout();
@@ -111,7 +110,7 @@
             TbpSendMoney.ImageIndex = 2;
             TbpSendMoney.Location = new Point(201, 0);
             TbpSendMoney.Name = "TbpSendMoney";
-            TbpSendMoney.Size = new Size(879, 790);
+            TbpSendMoney.Size = new Size(1155, 790);
             TbpSendMoney.TabIndex = 1;
             TbpSendMoney.Text = "Send Money";
             TbpSendMoney.UseVisualStyleBackColor = true;
@@ -120,9 +119,9 @@
             // 
             uCsendmoney1.Dock = DockStyle.Fill;
             uCsendmoney1.Location = new Point(0, 0);
-            uCsendmoney1.Margin = new Padding(5, 5, 5, 5);
+            uCsendmoney1.Margin = new Padding(5);
             uCsendmoney1.Name = "uCsendmoney1";
-            uCsendmoney1.Size = new Size(879, 790);
+            uCsendmoney1.Size = new Size(1155, 790);
             uCsendmoney1.TabIndex = 0;
             // 
             // TbpAddMoney
@@ -131,7 +130,7 @@
             TbpAddMoney.ImageIndex = 5;
             TbpAddMoney.Location = new Point(201, 0);
             TbpAddMoney.Name = "TbpAddMoney";
-            TbpAddMoney.Size = new Size(879, 790);
+            TbpAddMoney.Size = new Size(1155, 790);
             TbpAddMoney.TabIndex = 2;
             TbpAddMoney.Text = "Add Money";
             TbpAddMoney.UseVisualStyleBackColor = true;
@@ -140,9 +139,9 @@
             // 
             uCaddmoney1.Dock = DockStyle.Fill;
             uCaddmoney1.Location = new Point(0, 0);
-            uCaddmoney1.Margin = new Padding(5, 5, 5, 5);
+            uCaddmoney1.Margin = new Padding(5);
             uCaddmoney1.Name = "uCaddmoney1";
-            uCaddmoney1.Size = new Size(879, 790);
+            uCaddmoney1.Size = new Size(1155, 790);
             uCaddmoney1.TabIndex = 0;
             // 
             // TbpTransactions
@@ -151,7 +150,7 @@
             TbpTransactions.ImageIndex = 6;
             TbpTransactions.Location = new Point(201, 0);
             TbpTransactions.Name = "TbpTransactions";
-            TbpTransactions.Size = new Size(879, 790);
+            TbpTransactions.Size = new Size(1155, 790);
             TbpTransactions.TabIndex = 3;
             TbpTransactions.Text = "Transactions";
             TbpTransactions.UseVisualStyleBackColor = true;
@@ -160,9 +159,9 @@
             // 
             uCtransactions1.Dock = DockStyle.Fill;
             uCtransactions1.Location = new Point(0, 0);
-            uCtransactions1.Margin = new Padding(5, 5, 5, 5);
+            uCtransactions1.Margin = new Padding(5);
             uCtransactions1.Name = "uCtransactions1";
-            uCtransactions1.Size = new Size(879, 790);
+            uCtransactions1.Size = new Size(1155, 790);
             uCtransactions1.TabIndex = 0;
             // 
             // TbpContacs
@@ -171,7 +170,7 @@
             TbpContacs.ImageIndex = 3;
             TbpContacs.Location = new Point(201, 0);
             TbpContacs.Name = "TbpContacs";
-            TbpContacs.Size = new Size(879, 790);
+            TbpContacs.Size = new Size(1155, 790);
             TbpContacs.TabIndex = 4;
             TbpContacs.Text = "Contacs";
             TbpContacs.UseVisualStyleBackColor = true;
@@ -180,30 +179,20 @@
             // 
             uCcontacs1.Dock = DockStyle.Fill;
             uCcontacs1.Location = new Point(0, 0);
-            uCcontacs1.Margin = new Padding(5, 5, 5, 5);
+            uCcontacs1.Margin = new Padding(5);
             uCcontacs1.Name = "uCcontacs1";
-            uCcontacs1.Size = new Size(879, 790);
+            uCcontacs1.Size = new Size(1155, 790);
             uCcontacs1.TabIndex = 0;
             // 
             // TbpProfile
             // 
-            TbpProfile.Controls.Add(uCprofile1);
             TbpProfile.ImageIndex = 4;
             TbpProfile.Location = new Point(201, 0);
             TbpProfile.Name = "TbpProfile";
-            TbpProfile.Size = new Size(879, 790);
+            TbpProfile.Size = new Size(1155, 790);
             TbpProfile.TabIndex = 5;
             TbpProfile.Text = "Profile";
             TbpProfile.UseVisualStyleBackColor = true;
-            // 
-            // uCprofile1
-            // 
-            uCprofile1.Dock = DockStyle.Fill;
-            uCprofile1.Location = new Point(0, 0);
-            uCprofile1.Margin = new Padding(4, 4, 4, 4);
-            uCprofile1.Name = "uCprofile1";
-            uCprofile1.Size = new Size(879, 790);
-            uCprofile1.TabIndex = 0;
             // 
             // TbpSetting
             // 
@@ -211,7 +200,7 @@
             TbpSetting.ImageIndex = 7;
             TbpSetting.Location = new Point(201, 0);
             TbpSetting.Name = "TbpSetting";
-            TbpSetting.Size = new Size(879, 790);
+            TbpSetting.Size = new Size(1155, 790);
             TbpSetting.TabIndex = 6;
             TbpSetting.Text = "Setting";
             TbpSetting.UseVisualStyleBackColor = true;
@@ -220,18 +209,19 @@
             // 
             uCsetting1.Dock = DockStyle.Fill;
             uCsetting1.Location = new Point(0, 0);
-            uCsetting1.Margin = new Padding(4, 4, 4, 4);
+            uCsetting1.Margin = new Padding(4);
             uCsetting1.Name = "uCsetting1";
-            uCsetting1.Size = new Size(879, 790);
+            uCsetting1.Size = new Size(1155, 790);
             uCsetting1.TabIndex = 0;
             // 
             // TbpLogOut
             // 
+            TbpLogOut.Controls.Add(button1);
             TbpLogOut.Controls.Add(uClogOut1);
             TbpLogOut.ImageIndex = 1;
             TbpLogOut.Location = new Point(201, 0);
             TbpLogOut.Name = "TbpLogOut";
-            TbpLogOut.Size = new Size(879, 790);
+            TbpLogOut.Size = new Size(1155, 790);
             TbpLogOut.TabIndex = 7;
             TbpLogOut.Text = "Log Out";
             TbpLogOut.UseVisualStyleBackColor = true;
@@ -240,9 +230,9 @@
             // 
             uClogOut1.Dock = DockStyle.Fill;
             uClogOut1.Location = new Point(0, 0);
-            uClogOut1.Margin = new Padding(5, 5, 5, 5);
+            uClogOut1.Margin = new Padding(5);
             uClogOut1.Name = "uClogOut1";
-            uClogOut1.Size = new Size(879, 790);
+            uClogOut1.Size = new Size(1155, 790);
             uClogOut1.TabIndex = 0;
             // 
             // imageList1
@@ -259,6 +249,15 @@
             imageList1.Images.SetKeyName(6, "Transaction.png");
             imageList1.Images.SetKeyName(7, "Settings.png");
             imageList1.Images.SetKeyName(8, "Wallet.png");
+            // 
+            // button1
+            // 
+            button1.Location = new Point(355, 380);
+            button1.Name = "button1";
+            button1.Size = new Size(341, 107);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -278,7 +277,6 @@
             TbpAddMoney.ResumeLayout(false);
             TbpTransactions.ResumeLayout(false);
             TbpContacs.ResumeLayout(false);
-            TbpProfile.ResumeLayout(false);
             TbpSetting.ResumeLayout(false);
             TbpLogOut.ResumeLayout(false);
             ResumeLayout(false);
@@ -304,5 +302,6 @@
         private UCprofile uCprofile1;
         private UCsetting uCsetting1;
         private UClogOut uClogOut1;
+        private Button button1;
     }
 }
